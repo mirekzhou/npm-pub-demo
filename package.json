@@ -1,17 +1,19 @@
 {
-  "name": "npm-pub-demo",
+  "name": "@mirekzhou/npm-pub-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "npm-pub-demo",
+  "repository": "mirekzhou/npm-pub-demo",
+  "main": "lib-npm/hello.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack-dev-server --open development",
     "build": "webpack --mode production",
     "deploy": "gh-pages -d dist",
-    "publish-demo": "npm run build && npm run deploy"
+    "publish-demo": "npm run build && npm run deploy",
+    "compile": "npx babel lib --out-dir lib-npm"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["npm", "demo"],
+  "author": "mirekzhou",
   "license": "ISC",
   "devDependencies": {
     "@babel/cli": "^7.7.5",
